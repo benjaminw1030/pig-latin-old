@@ -2,11 +2,22 @@
 var pigLatinTranslation = function(sentence) {
   var sentenceSplit = sentence.split(" ");
   var pigLatinize = sentenceSplit.forEach(function(word) {
-    if (word.charAt(0) === "a" || word.charAt(0) === "e" || word.charAt(0) === "i" || word.charAt(0) === "o" || word.charAt(0) === "u") {
-      console.log("vowel")
+    var letters = word.split("");
+    if (letters[0] === "a" || letters[0] === "e" || letters[0] === "i" || letters[0] === "o" || letters[0] === "u") {
+      letters.push("way");
+      letters.join();
     } else {
-      console.log("consonant");
+      letters.push(letters[0])
+      letters.shift();
+      letters.push("ay")
+    }     
+
+    if (letter === "a" || word.charAt(0) === "e" || word.charAt(0) === "i" || word.charAt(0) === "o" || word.charAt(0) === "u") {
+      word = word + "way";
+    } else {
+      word = wor
     };
+    console.log(word);
   });
   return pigLatinize;
 };
