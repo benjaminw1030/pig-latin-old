@@ -1,6 +1,6 @@
 // business logic
-var pigLatinTranslation = function(word) {
-  
+var pigLatinTranslation = function(sentence) {
+  return sentence;
 };
 
 // user interface logic
